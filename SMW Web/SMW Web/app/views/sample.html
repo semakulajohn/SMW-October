@@ -1,0 +1,14 @@
+﻿<div ng-controller="HomeController">
+    <div ng-repeat="x in data">
+        <h2>{{x.Location}}</h2>
+        <p>{{x.Description}}</p>
+    </div>
+
+    <br/>
+    <div class="row">
+        <div ng-repeat="project in latestProjects">
+            <h2>{{project.Title}}</h2>
+            <p> {{project.Description}}</p>
+        </div>
+    </div>
+</div>

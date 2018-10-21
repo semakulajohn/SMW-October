@@ -1,0 +1,105 @@
+﻿@model SMW.Admin.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+        Layout = "~/Views/Shared/_LayoutMvc.cshtml";
+    }
+
+
+
+    <div id="register-form" class="login-container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="login col-sm-12">
+                <div class="text-center m-b-md">
+                    <img width="240" src="/images/logo.png" />
+                    <div class="clear5"></div>
+                    <h3>Create a New SMW Account </h3>
+                </div>
+                <div class="clear20"></div>
+
+                @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <hr />
+                    @Html.ValidationSummary("", new { @class = "text-danger" })
+
+    <div class="form-group">
+        <div class="col-md-6">
+            <label class="control-label">Email Address</label><br />
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeHolder = "Your Email Address" })
+        </div>
+
+        <div class="col-md-6">
+            <label class="control-label">User Name</label><br />
+            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", @placeHolder = "Unique user Name" })
+        </div>
+    </div>
+
+                    
+                     <div class="form-group">
+        <div class="col-md-6">
+            <label class="control-label">First Name</label><br />
+            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control", @placeHolder = "Your First Name" })
+        </div>
+
+        <div class="col-md-6">
+            <label class="control-label">Last Name</label><br />
+            @Html.TextBoxFor(m => m.LastName, new { @class = "form-control", @placeHolder = "Your Last Name" })
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-md-12">
+            <label class="control-label">Phone Number</label><br />
+            @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control", @placeHolder = "Your Phone/Mobile Number" })
+        </div>
+
+        
+    </div>
+
+
+                   
+
+
+     <div class="form-group">
+            <div class="col-md-6">
+                <label class="control-label">Password</label><br />
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeHolder = "Password" })
+            </div>
+
+            <div class="col-md-6">
+                <label class="control-label">Re-enter password</label><br />
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", @placeHolder = "Confirm password" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-12 m-t-none">
+                <span class="help-block m-b-none">Use at least 6 characters and must include atleast one symbol (e.g. @@#$%£). Don't use something too obvious like your name</span>
+            </div>
+        </div>
+                  <div class="clear5"></div>   
+                    <div class="form-group">
+                      
+
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-info btn-block" value="Create Account" />
+                            </div>
+                       
+                    </div>
+                     <div class="clear5"></div>
+    <hr />
+
+    
+                }
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

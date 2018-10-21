@@ -1,0 +1,125 @@
+﻿
+<div id="header" ng-include="'/app/views/_common/header.html'"></div>
+
+<aside id="menu" ng-include="'/app/views/_common/navigation.html'"></aside>
+
+<div id="wrapper">
+
+    <div ng-include="'/app/views/_common/Breadcrumb.html'"></div>
+
+    <div class="content" ng-controller="MediaDetailController">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="hpanel">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-9">                                                
+                                                <div ng-if="selectedMedia.MediaTypeId == 2">
+                                                    <img class="img-responsive" ng-src="/media/{{selectedMedia.MediaId}}/{{selectedMedia.Name}}" alt="{{selectedMedia.Name}}" />
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <table class="table table-bordered smallTable">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Name :</td>
+                                                            <td class="dont-break-out">{{selectedMedia.Name}}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Size :</td>
+                                                            <td>{{ selectedMedia.Filesize/1024/1024|number:2 }} MB</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="100">Created :</td>
+                                                            <td>{{selectedMedia.CreatedOn | date:"yyyy-MM-dd HH:mm:ss"}}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Modified :</td>
+                                                            <td>{{selectedMedia.TimeStamp | date:"yyyy-MM-dd HH:mm:ss"}}</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                                
+                                            </div>   
+                                         <div class="row">
+                                             <div class="forum-box" id="blogcomments">
+                                                 <div class="forum-comments">
+                                                     <i class="fa fa-comments"></i> Comments <span class="badge badge-warning platform-comment-badge">{{mediaComments.length}}</span>
+
+                                                     <div ng-show="showComments">
+                                                         <div class="panel-body">
+
+                                                             <div ng-hide="mediaComments.length" class="alert fade in error">There are currently no comments</div>
+
+                                                             <div class="media-block media" ng-repeat="comment in mediaComments">
+                                                                 <a class="pull-left">
+                                                                     <img src="/images/Av.jpg" alt="profile-picture">
+                                                                 </a>
+                                                                 <div class="media-body">
+
+                                                                     <span class="text-semibold media-heading box-inline">{{comment.CreatedBy}} - {{comment.CreatedOn| date:"yyyy-MM-dd hh:mm"}}</span>
+
+                                                                     <p>{{comment.Body}}</p>
+                                                                     <hr>
+                                                                 </div>
+                                                             </div>
+                                                         </div>
+
+                                                         <div class="panel-body">
+
+                                                             <h4 class="font-bold">Add comment</h4>
+                                                             <hr />
+                                                             <form name="commentform" class="form-horizontal">
+                                                                 <fieldset>
+                                                                     <div class="form-group">
+                                                                         <label for="comment" class="col-sm-2 control-label">Comment *</label>
+
+                                                                         <div class="col-sm-10">
+                                                                             <textarea placeholder="" name="comment" rows="4" class="form-control"
+                                                                                       ng-model="comment.Body" required
+                                                                                       ng-class="{ errorinput: commentform.comment.$invalid && commentform.comment.$touched && commentform.comment.$dirty }"></textarea>
+                                                                             <span ng-show="commentform.comment.$invalid && commentform.comment.$dirty && commentform.comment.$touched">
+                                                                                 <span ng-show="commentform.comment.$error.required && commentform.comment.$touched" class="help-block error margin-bottom-00 "><i class="fa fa-warning"></i> Comment is required.</span>
+                                                                             </span>
+                                                                         </div>
+                                                                     </div>
+                                                                 </fieldset>
+                                                                 <button class="btn btn-primary pull-right" type="submit"
+                                                                         ng-disabled="commentform.$dirty && !commentform.$valid "
+                                                                         ng-click="addComment(comment)">
+                                                                     <i class="fa fa-send fa-fw"></i> Save comment
+                                                                 </button>
+                                                             </form>
+                                                         </div>
+                                                     </div>
+
+
+                                                     <div class="check-element sample-show-hide alert alert-success animate-show" ng-show="showCommentMessageSave" style="clear:both;">
+                                                         <i class="fa-fw fa fa-check"></i>
+                                                         <span>Comment has been saved</span>
+                                                     </div>
+                                                     <div class="check-element sample-show-hide alert alert-success animate-show" ng-show="showCommentMessageDelete" style="clear:both;">
+                                                         <i class="fa-fw fa fa-check"></i>
+                                                         <span>Comment has been deleted</span>
+                                                     </div>
+                                                     <div class="check-element sample-show-hide alert alert-success animate-show" ng-show="showCommentMessageDeleteFailed" style="clear:both;">
+                                                         <i class="fa-fw fa fa-check"></i>
+                                                         <span>Failed to delete Comment </span>
+                                                     </div>
+
+                                                 </div>
+                                             </div>                                 
+                                        </div>
+                                    </div>                               
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+

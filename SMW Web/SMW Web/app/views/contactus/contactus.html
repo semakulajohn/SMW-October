@@ -1,0 +1,183 @@
+﻿<div ng-include="'/app/views/_common/nav.html'"></div>
+<section class="slice sct-color-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="py-5 text-center">
+                    <h1 class="heading heading-1 strong-400 text-normal">
+                        Let's talk about your project
+                    </h1>
+                    <span class="clearfix"></span>
+                    <div class="fluid-paragraph fluid-paragraph-sm c-gray-light text-center mt-3">
+                        <p class="lead strong-300">
+                            Start building fast, beautiful and modern looking Houses.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sct-color-1">
+    <!-- Map canvas -->
+    <div id="google-map">
+        <!-- #google-container will contain the map  -->
+        <div id="map_canvas" class="map-canvas"></div>
+    </div>
+
+
+    <section class="slice sct-color-1;">
+        <div class="container">
+            <div class="row cols-xs-space cols-sm-space cols-md-space">
+                <div class="col-lg-6">
+                    <div class="section-title section-title--style-1 text-center mb-2">
+                        <h3 class="section-title-inner text-normal">
+                            Drop us a line
+                        </h3>
+                        <span class="section-title-delimiter clearfix d-none"></span>
+                    </div>
+                    <span class="clearfix"></span>
+                    <div class="fluid-paragraph fluid-paragraph-sm c-gray-light strong-300 text-center">
+                        Start building fast, beautiful and modern looking Houses.
+                    </div>
+                    <span class="space-xs-xl"></span>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8" ng-controller="WebQueryEditController">
+                            <!-- Contact form -->
+                            <form id="form_contact" class="form-default" role="form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group has-feedback">
+                                            <label for="" class="text-uppercase c-gray-light">Your name</label>
+                                            <input placeholder="Your names" type="text" name="name" class="form-control form-control-lg" ng-model="webQuery.Name" required ng-class="{ errorinput: form.name.$invalid}">
+                                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                            <div class="help-block with-errors"></div>
+
+                                            <span ng-show="form.name.$invalid">
+                                                <span ng-show="form.name.$error.required" class="help-block error"><i class="fa fa-warning"></i> Enter your names.</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group has-feedback">
+                                            <label for="" class="text-uppercase c-gray-light">Email address</label>
+                                            <input type="email" class="form-control form-control-lg" name="email" ng-model="webQuery.EmailAddress"
+                                                   placeholder="Your email address" required ng-class="{ errorinput: form.email.$invalid }"
+                                                   ng-pattern="/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/">
+                                            <span ng-show="form.email.$invalid">
+                                                <span ng-show="form.email.$error.required" class="help-block error"><i class="fa fa-warning"></i> Email address is required.</span>
+                                                <span ng-show="form.email.$error.pattern" class="help-block error margin-bottom-00 ">
+                                                    <i class="fa fa-warning"></i> Invalid Email Address, it should be of the form you@mail.com.
+                                                </span>
+                                            </span>
+                                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                            <div class="help-block with-errors"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-sm-6">
+                                        <div class="form-group has-feedback">
+                                            <label for="" class="text-uppercase c-gray-light">Phone</label>
+
+                                            <input placeholder="Your phone number" type="text" class="form-control form-control-lg" name="phone" ng-model="webQuery.PhoneNumber" required
+                                                   ng-class="{ errorinput:form.phone.$invalid }">
+                                            <span ng-show="form.phone.$invalid">
+                                                <span ng-show="form.phone.$error.required" class="help-block error"><i class="fa fa-warning"></i> Enter Phone Number.</span>
+                                            </span>
+                                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group has-feedback">
+                                            <label for="" class="text-uppercase c-gray-light">Message</label>
+                                            <textarea class="form-control no-resize" rows="5" name="message" ng-model="webQuery.Body" placeholder="Your message here..."
+                                                      required ng-class="{ errorinput: form.message.$invalid}"></textarea>
+                                            <span ng-show="form.message.$invalid">
+                                                <span ng-show="form.message.$error.required" class="help-block error"><i class="fa fa-warning"></i> Message is Required.</span>
+                                            </span>
+
+                                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="check-element sample-show-hide alert alert-success animate-show" ng-class="{'check-element sample-show-hide alert alert-success animate-show':$scope.setTimeToAnimate(0),'check-element sample-show-hide.ng-hide alert alert-success animate-show':$scope.setTimeToAnimate(7000)}" ng-show="showMessageSave" style="clear:both;">
+                                            <i class="fa-fw fa fa-check"></i>
+                                            <span>Thanks for contacting us, we shall get back to you shortly.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <button id="submit" ng-click="Save(webQuery)" class="btn btn-styled btn-base-1 mt-4">
+                                        Send Message
+                                    </button>
+                                </div>
+                        </div>
+
+
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Get in touch with us
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Tel: +256 414 270 703
+                            </p>
+                            <p>
+                                Tel: +256 772 456 150
+                            </p>
+                            <p>  Tel: +44 7958 045 097</p>
+                            <p>   Email: info@smw.co.ug</p>
+                            <p>    MUTEC Building </p>
+                            <p>   Plot 101/7 Butikiro Road Namirembe/ Rubaga</p>
+                            <p>
+                                P.o.Box.30880, Kampala,
+                                Uganda
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <script>
+    var map;
+
+    function initMap() {
+        var uluru = new google.maps.LatLng(0.3111137, 32.5615422);
+        var map = new google.maps.Map(document.getElementById('map_canvas'), {
+            zoom: 15,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHSuz_ddwrCpNKitt_-PdWA3RbWXWWm9U&callback=initMap"
+            async defer></script>
+</section>
+    <div ng-include="'/app/views/_common/footer.html'"></div>

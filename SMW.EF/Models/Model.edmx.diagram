@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6f984ac7f01c4360b6396a36c4a25782" Name="Diagram1">
+        <EntityTypeShape EntityType="SMWModel.AspNetRole" Width="1.5" PointX="0.75" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMWModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMWModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMWModel.AspNetUser" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMWModel.Comment" Width="1.5" PointX="5.25" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMWModel.ExtensionType" Width="1.5" PointX="3.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMWModel.MediaType" Width="1.5" PointX="1.5" PointY="5" IsExpanded="true" />
+        <AssociationConnector Association="SMWModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_IdentityUser_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="SMWModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_IdentityUser_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="SMWModel.FK_AspNetUser_CreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMWModel.FK_AspNetUser_DeletedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMWModel.FK_AspNetUser_UpdatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Comment_CreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Comment_DeletedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Comment_UpdatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="SMWModel.Fk_dbo_ExtensionType_MediaTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMWModel.AspNetUserRoles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SMWModel.Media" Width="1.5" PointX="6" PointY="3.75" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Comment_MediaId" />
+        <AssociationConnector Association="SMWModel.FK_Media_ExtensionType" />
+        <AssociationConnector Association="SMWModel.FK_Media_MediaType" />
+        <EntityTypeShape EntityType="SMWModel.Service" Width="1.5" PointX="11.25" PointY="8.5" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Service_CreatedBy" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Service_DeletedBy" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Service_UpdatedBy" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Service_MediaId" />
+        <EntityTypeShape EntityType="SMWModel.PropertyType" Width="1.5" PointX="6" PointY="0.75" />
+        <EntityTypeShape EntityType="SMWModel.Facility" Width="1.5" PointX="11.25" PointY="13.125" />
+        <EntityTypeShape EntityType="SMWModel.FacilityType" Width="1.5" PointX="9" PointY="17.375" />
+        <EntityTypeShape EntityType="SMWModel.RentalPeriod" Width="1.5" PointX="9" PointY="20" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Facility_CreatedBy" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Facility_DeletedBy" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Facility_UpdatedBy" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Facility_FacilityTypeId" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Facility_MediaId" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Facility_RentalPeriodId" />
+        <EntityTypeShape EntityType="SMWModel.Property" Width="1.5" PointX="8.25" PointY="4.625" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Property_CreatedBy" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Property_DeletedBy" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Property_PublishedBy" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Property_UnPublishedBy" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Property_UpdatedBy" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Property_MediaId" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Property_PropertyTypeId" />
+        <EntityTypeShape EntityType="SMWModel.Video" Width="1.5" PointX="13.5" PointY="11.75" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Video_CreatedBy" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Video_DeletedBy" />
+        <AssociationConnector Association="SMWModel.Fk_dbo_Video_PublishedBy" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Video_UpdatedBy" />
+        <AssociationConnector Association="SMWModel.FK_Video_ClientId" />
+        <EntityTypeShape EntityType="SMWModel.Project" Width="1.5" PointX="8.25" PointY="11.875" />
+        <EntityTypeShape EntityType="SMWModel.Status" Width="1.5" PointX="6" PointY="20.25" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Project_CreatedBy" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Project_DeletedBy" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Project_UpdatedBy" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Project_MediaId" />
+        <AssociationConnector Association="SMWModel.FK_dbo_Project_StatusId" />
+        <AssociationConnector Association="SMWModel.FK_Video_ProjectId" />
+        <EntityTypeShape EntityType="SMWModel.WebQuery" Width="1.5" PointX="0.75" PointY="0.75" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

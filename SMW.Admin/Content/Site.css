@@ -1,0 +1,67 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.searchbox .custom-search-form {
+    margin-right: 0;
+    background-color: white;
+}
+
+td .btn{
+    padding: 3px 12px;
+}
+
+.newimgclass img {
+    max-height: 120px !important;
+}
+
+td i{
+    margin-right: 10px;
+}
+
+.img-circle {
+    border-radius: 10%;
+}
+
+.st-john-img-lg {
+    width: 150px;
+    height: 150px;
+}
+
+.help-block {
+    color: #ff0000;
+}
+
+.form-group .control-label {
+    font-weight: 700;
+}
+
+.text-thin{
+    font-weight:600;
+}
+
+.marriage-number{
+    padding-left:1000px;
+    color: red;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#register-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}

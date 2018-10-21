@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html ng-app="homer">
+<head>
+    <meta charset="utf-8" />
+    <title> SMW</title>
+    <link href="../../assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @*@Styles.Render("~/Content/css")*@
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/bootstrap.min.css" type="text/css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700" rel="stylesheet">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="../../assets/vendor/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/hamburgers/hamburgers.min.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/vendor/animate/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/vendor/fancybox/css/jquery.fancybox.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/fonts/ionicons/css/ionicons.min.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/fonts/line-icons/line-icons.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/fonts/line-icons-pro/line-icons-pro.css" type="text/css">
+    <!-- Linea Icons -->
+    <link rel="stylesheet" href="../../assets/fonts/linea/arrows/linea-icons.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/fonts/linea/basic/linea-icons.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/fonts/linea/ecommerce/linea-icons.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/fonts/linea/software/linea-icons.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Amiri|EB+Garamond|Roboto+Condensed|Song+Myung" rel="stylesheet" />
+    <!-- Global style (main) -->
+    <link type="text/css" href="../../assets/css/boomerang.min.css" rel="stylesheet" media="screen">
+
+    <!-- Custom style - Remove if not necessary -->
+    <link type="text/css" href="../../assets/css/custom-style.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="../../assets/images/favicon.png" rel="icon" type="image/png">
+
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body ng-controller="appCtrl" class="{{$state.current.data.specialClass}}" landing-scrollspy tour backdrop="true">
+    <div class="body-wrap shop-default shop-minimalist">
+        <div id="st-container" class="st-container">
+            <div class="st-pusher">
+                <div class="st-content">
+                    <div class="st-content-inner">
+                        <!-- Header -->
+                        <div class="header">
+                            <!-- Top Bar -->
+                            <!-- Global Search -->
+                            <section id="sctGlobalSearch" class="global-search global-search-overlay">
+                                <div class="container">
+                                    <div class="global-search-backdrop mask-dark--style-2"></div>
+                                    <!-- Search form -->
+                                    <form class="form-horizontal form-global-search z-depth-2-top" role="form">
+                                        <div class="px-4">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <input type="text" class="search-input" placeholder="Type and hit enter ...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="close-search" data-toggle="global-search" title="Close search bar"></a>
+                                    </form>
+                                </div>
+                            </section>
+                            <!-- Navbar -->
+                          
+                        </div>
+                        @RenderBody()
+
+                       
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    @*@Scripts.Render("~/bundles/jquery")*@
+    @*@RenderSection("scripts", required: false)*@
+    <!-- SCRIPTS -->
+    <!-- Core -->
+    <script src="../../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../../assets/vendor/popper/popper.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/slidebar/slidebar.js"></script>
+    <script src="../../assets/js/classie.js"></script>
+    <!-- Bootstrap Extensions -->
+    <script src="../../assets/vendor/bootstrap-notify/bootstrap-growl.min.js"></script>
+    <script src="../../assets/vendor/scrollpos-styler/scrollpos-styler.js"></script>
+    <!-- Plugins: Sorted A-Z -->
+    <script src="../../assets/vendor/adaptive-backgrounds/adaptive-backgrounds.js"></script>
+    <script src="../../assets/vendor/countdown/js/jquery.countdown.min.js"></script>
+    <script src="../../assets/vendor/dropzone/dropzone.min.js"></script>
+    <script src="../../assets/vendor/easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="../../assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+    <script src="../../assets/vendor/flatpickr/flatpickr.min.js"></script>
+    <script src="../../assets/vendor/flip/flip.min.js"></script>
+    <script src="../../assets/vendor/footer-reveal/footer-reveal.min.js"></script>
+    <script src="../../assets/vendor/gradientify/jquery.gradientify.min.js"></script>
+    <script src="../../assets/vendor/headroom/headroom.min.js"></script>
+    <script src="../../assets/vendor/headroom/jquery.headroom.min.js"></script>
+    <script src="../../assets/vendor/input-mask/input-mask.min.js"></script>
+    <script src="../../assets/vendor/instafeed/instafeed.js"></script>
+    <script src="../../assets/vendor/milestone-counter/jquery.countTo.js"></script>
+    <script src="../../assets/vendor/nouislider/js/nouislider.min.js"></script>
+    <script src="../../assets/vendor/paraxify/paraxify.min.js"></script>
+    <script src="../../assets/vendor/select2/js/select2.min.js"></script>
+    <script src="../../assets/vendor/sticky-kit/sticky-kit.min.js"></script>
+    <script src="../../assets/vendor/swiper/js/swiper.min.js"></script>
+    <script src="../../assets/vendor/textarea-autosize/autosize.min.js"></script>
+    <script src="../../assets/vendor/typeahead/typeahead.bundle.min.js"></script>
+    <script src="../../assets/vendor/typed/typed.min.js"></script>
+    <script src="../../assets/vendor/vide/vide.min.js"></script>
+    <script src="../../assets/vendor/viewport-checker/viewportchecker.min.js"></script>
+    <script src="../../assets/vendor/wow/wow.min.js"></script>
+    <!-- Isotope -->
+    <script src="../../assets/vendor/isotope/isotope.min.js"></script>
+    <script src="../../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+   @* <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104437451-1"></script>*@
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-104437451-1');
+    </script>
+
+    <!-- App JS -->
+     @Scripts.Render("~/bundles/bower_components")
+    <script src="../../assets/js/boomerang.min.js"></script>
+
+
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    <script src="~/app/scripts/app.js"></script>
+    <script src="~/app/scripts/config.js"></script>
+    <script src="~/app/scripts/directives/directives.js"></script>
+
+    @*<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>*@
+   
+    @Scripts.Render("~/bundles/app_scripts")
+
+    <script src="~/js/es5-shim.min.js"></script>
+    <script src="~/js/es5-sham.min.js"></script>
+    <script src="/js/kendo.all.min.js"></script>
+  
+
+    <script src="~/assets/js/Custom.js"></script>
+</body>
+</html>

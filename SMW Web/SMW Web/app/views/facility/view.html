@@ -1,0 +1,115 @@
+﻿
+<div ng-include="'/app/views/_common/nav.html'"></div>
+
+<!-- PAGE TITLE -->
+<section class="slice--offset slice-lg sct-color-1 has-bg-cover bg-size-cover" style="background: url('../../assets/images/backgrounds/slider/img-43.jpg') center center;background-size: 1300px 600px;">
+    <span class="mask mask-dark--style-2"></span>
+    <div class="container relative">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="py-5">
+                    <h1 class="heading heading-xl strong-600 text-normal c-white">
+                        Facility Management
+                    </h1>
+                    <p class="lead line-height-1_8 strong-300 c-white mt-3">
+                        SMW offers a range of core property and facilities management services.
+                    </p>
+                    <span class="space-xs-lg"></span>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="slice-lg sct-color-1">
+    <div class="container">
+        <div class="section-title section-title--style-1 text-center mb-2">
+            <h3 class="section-title-inner heading-2 strong-500">
+                Facility Management
+            </h3>
+            <span class="section-title-delimiter clearfix d-none"></span>
+        </div>
+        <span class="clearfix"></span>
+        
+        <div class="col-lg-12">
+            <h4 class="heading heading-3 strong-400 font-custom-4 mt-3">
+                SMW offers a range of core property and facilities management services.
+            </h4>
+            <p class="text-lg line-height-1_8 c-gray-light">
+                Property management is essentially looking after every aspect of a property, from managing the use and occupancy of a building, admin and legal compliance issues, and undertaking repairs and maintenance of the building itself.
+            </p>
+           
+        </div>
+        <div class="col-lg-12">
+            <h4 class="heading heading-3 strong-400 font-custom-4 mt-3">
+                We provide letting services, sourcing credible local tenants on your behalf.
+            </h4>
+            <p class="text-lg line-height-1_8 c-gray-light">
+                For holiday homes, we will provide all the property management necessary, ensuring that properties are at all times kept to high standards.
+            </p>
+            <p class="text-lg line-height-1_8 c-gray-light">
+                We will deal with the day-to-day upkeep of a properties (holiday homes and rentals), offering expert advice to increase your revenue, lifecycle, energy efficiency and return on investment on a property or property portfolio.
+            </p>
+            <p class="text-lg line-height-1_8 c-gray-light">
+                As well as houses, flats and other residential properties, we look after commercial premises.
+            </p>
+</div>
+        <div class="col-lg-12">
+            <h4 class="heading heading-3 strong-400 font-custom-4 mt-3">
+                Why outsource your property management to us?
+            </h4>
+            <p class="text-lg line-height-1_8 c-gray-light">
+                At SMW, we see ourselves as your outsourced property directors. We support you in managing your property, leaving you to do what you do best. Whether you have a small property or a large block of flats to maintain, we can take care of all the operational, financial and compliance aspects of property, as well as planned and reactive maintenance.
+            </p>
+            <p class="text-lg line-height-1_8 c-gray-light">
+                We’re passionate about delivering high quality customer service. You’ll benefit from a single point of contact.
+            </p>
+            <p class="text-lg line-height-1_8 c-gray-light">
+                Our objective is to provide fully managed and integrated services, so that you can focus on the bigger things.
+            </p>
+       
+            <p class="text-lg line-height-1_8 c-gray-light">
+                SMW will take away the hassle of organising paperwork and leases, rent collection, chasing money and property upkeep.
+            </p>
+            <p class="text-lg line-height-1_8 c-gray-light">
+                We offer fully transparent and open-book costing, with bespoke reporting according to your needs.
+            </p>
+</div>
+        <span class="space-xs-xl"></span>
+        <div ng-controller="LatestFacilityController">
+            <div class="row cols-xs-space cols-sm-space cols-md-space mb-3" ng-repeat="facility in latestFacilities">
+                <div class="col-lg-4">
+                    <div class="block block--style-3">
+                        <div class="block-image relative">
+                            <div class="view view-first">
+                                <a href="#/facilities/view/{{facility.FacilityId}}/{{facility.MediaFolderId}}">
+                                    <!-- facility image -->
+                                    <img src="media/{{facility.MediaForView.MediaId}}/{{facility.MediaForView.Name}}" alt="{{facility.Media.Name}}">
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="block-body">
+                            <h3 class="heading heading-6 strong-600">
+                                <a href="">{{facility.FacilityTypeName}}</a>
+                            </h3>
+                            <p>
+                                {{facility.Description | limitTo:30}}
+                            </p>
+                            <a href="#/facilities/view/{{facility.FacilityId}}/{{facility.MediaFolderId}}" class="link link-sm link--style-2 mt-3">
+                                <i class="fa fa-long-arrow-right"></i> Learn more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div ng-include="'/app/views/_common/footer.html'"></div>
+
+
+

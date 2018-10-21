@@ -1,0 +1,161 @@
+.fixedHeader{
+    position:fixed;
+    top:0;
+    width:100%;
+    transition:ease-in;
+}
+#mainHeader{
+    border-bottom:1px solid #f1f1f1;
+}
+
+@media (min-width: 992px) {
+    .col-wrapper--text {
+        padding: 1.5rem;
+    }
+}
+
+@media(max-width:767px){
+    .page-title.page-title--style-2 {
+    padding: 0rem 0;
+    color: #333;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
+
+
+@media (min-width: 992px){
+.ml-lg-auto, .mx-lg-auto {
+    margin-left: auto!important;
+}
+}
+
+.shop-sportswear .product {
+    background-color: #f5f5f5;
+}
+.shop-sportswear .block-image {
+    padding: 1.5rem !important;
+}
+
+.shop-sportswear .product {
+    background-color: #f5f5f5 !important;
+}
+.footer {
+    background: #000a42;
+}
+.heading{
+    font-family:Roboto Condensed, san-serif !important;
+}
+.section-title .section-title-inner,body{
+    font-family: "Roboto",sans-serif; 
+}
+.navbar.bg-default {
+    background: #fff;
+}
+.heading{
+    color:#077684;
+}
+.heading:hover>a{
+    color:#077684 !important;
+}
+.link--style-2 {
+    color: #077684 !important;
+    text-decoration: underline !important;
+}
+.btn-base-1 {
+    border: 1px solid  #077684;
+    background-color: #077684;
+}
+
+.btn-base-1:active, .btn-base-1.active, .btn-base-1:focus, .btn-base-1:hover {
+    background-color: #bfd300;
+    border: 1px solid #bfd300;
+    color: #FFF;
+}
+.bg-base-1 {
+    background-color: #077684 !important;
+    color: #FFF !important;
+}
+.col-xs-6{
+    position: relative;
+    width: 100%;
+}
+@media(max-width:640px){
+    .heading-xxl {
+    font-size: 2.5rem !important;
+}
+    .slice-lg {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+    .slice-xl{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    }
+    .background-image-holder .holder-item {
+    height: auto;
+    padding: 2rem 0;
+}
+    .lead {
+        font-size: 1rem;
+    }
+    .col-xs-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+}
+.bg-base-1 .btn-base-5{
+    color:#333;
+}
+@media(max-width:480px){
+    .heading-3 {
+    font-size: 0.85rem !important;
+    line-height: 1.3;
+}
+}
+
+.btn-styled.btn-sm {
+    font-size: 0.7rem !important;
+}
+
+.bg-red {
+    background-color: #067584 !important;
+}
+.bg-yellow {
+    background-color: #bfd200 !important;
+}
+.advertisement{
+    font-family:"EB Garamond",serif !important;
+    letter-spacing:0.5rem;
+}
+.section-title .section-title-inner{
+        letter-spacing:0.2rem;
+}
+
+.mask-dark--style-1 {
+    background: rgba(0,0,0,0.7);
+}
+.block--style-3 .block-price,a:hover {
+    color: #067584;
+}
+
+.swiper-pagination-bullet-active {
+    background: #067584;
+}
+a{
+    color:#bfd200;
+}
+
+.about{
+    padding-bottom:90.5%;
+}
+ #map {
+        height: 400px;
+        width: 100%;
+       }
+ .dashboard{
+     background: rgba(255, 255, 255, 0.6196078431372549);
+     padding:0 15px;
+ }

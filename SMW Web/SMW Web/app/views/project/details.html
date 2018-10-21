@@ -1,0 +1,42 @@
+﻿<div ng-include="'/app/views/_common/nav.html'"></div>
+
+<section ng-controller="ProjectDetailController" class="slice sct-color-1 border-bottom">
+    <div class="container no-padding">
+        <div class="row row-no-padding">
+            <div class="col-lg-6 order-lg-1">
+                <div class="swiper-js-container background-image-holder">
+                    <div class="swiper-container" data-swiper-items="1" data-swiper-effect="coverflow" data-swiper-space-between="0" data-swiper-sm-items="1" data-swiper-sm-space-between="0" data-swiper-xs-items="1" data-swiper-xs-space-between="0">
+                        <div class="swiper-wrapper">
+                            <!-- Slide -->
+                            <div class="swiper-slide" ng-repeat="image in projectImages">
+                                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover same-height" data-same-height="#div_properties_search" style="background-image: url(media/{{image.MediaId}}/{{image.Name}}); background-position: bottom bottom;">
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button--hover swiper-button-next"></div>
+                        <div class="swiper-button--hover swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 ml-lg-auto order-2">
+                <div class="animate-on-scroll fadeIn" data-wow-delay="1s">
+                    <h3 class="heading heading-3 text-uppercase strong-600 mt-3">
+                        {{project.Title}}
+                    </h3>
+                  
+                    <p class="mt-4">
+                        {{project.Description}}
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</section>
+
+<div ng-include="'/app/views/_common/footer.html'"></div>

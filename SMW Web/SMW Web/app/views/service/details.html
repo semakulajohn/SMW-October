@@ -1,0 +1,195 @@
+﻿
+<div ng-include="'/app/views/_common/nav.html'"></div>
+<section ng-controller="ServiceEditController" class="slice sct-color-1 border-bottom">
+    <div class="container no-padding">
+        <div class="row row-no-padding">
+            <div class="col-lg-6 order-lg-1">
+                <div class="swiper-js-container background-image-holder">
+                    <div class="swiper-container" data-swiper-items="1" data-swiper-effect="coverflow" data-swiper-space-between="0" data-swiper-sm-items="1" data-swiper-sm-space-between="0" data-swiper-xs-items="1" data-swiper-xs-space-between="0">
+                        <div class="swiper-wrapper">
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover same-height" data-same-height="#div_properties_search" style="background-image: url(../../assets/images/prv/real-estate/img-slider-1.jpg); background-position: bottom bottom;">
+                                </div>
+                            </div>
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover same-height" data-same-height="#div_properties_search" style="background-image: url(../../assets/images/prv/real-estate/img-slider-2.jpg); background-position: bottom bottom;">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button--hover swiper-button-next"></div>
+                        <div class="swiper-button--hover swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 ml-lg-auto order-2">
+                <div class="animate-on-scroll fadeIn" data-wow-delay="1s">
+                    <h3 class="heading heading-3 text-uppercase strong-600 mt-3">
+                        Architecture<br>studio
+                    </h3>
+                    <p class="strong-600 mt-4">
+                        One morning when Gregor Samsa woke from troubled dreams he found himself transformed in his bed.
+                    </p>
+                    <p class="mt-4">
+                        One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.
+                    </p>
+                    <h2 class="heading heading-2 strong-600 c-base-1 mt-2">
+                        $1,299.00
+                    </h2>
+                    <div class="btn-container mt-4">
+                        <a href="#" class="btn btn-styled btn-base-1 btn-circle btn-icon-left" data-scroll-to="#scrollToSection">
+                            <i class="icon ion-android-cart"></i> Buy It Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="slice sct-color-2 border-top border-bottom">
+    <div class="container">
+        <div class="section-title section-title--style-1 text-center mb-1">
+            <h3 class="section-title-inner heading-sm strong-600 text-uppercase">
+                <span>Featured properties</span>
+            </h3>
+            <span class="section-title-delimiter clearfix d-none"></span>
+        </div>
+        <span class="clearfix"></span>
+        <div class="fluid-paragraph fluid-paragraph-sm c-gray-light strong-300 text-center">
+            Start building fast, beautiful and modern looking websites in no time using our theme.
+        </div>
+        <span class="space-xs-lg"></span>
+        <div class="swiper-js-container">
+            <div class="swiper-container" data-swiper-autoplay="true" data-swiper-items="4" data-swiper-space-between="30" data-swiper-sm-items="2" data-swiper-sm-space-between="20" data-swiper-xs-items="1" data-swiper-xs-space-between="0">
+                <div class="swiper-wrapper mb-5">
+                    <div class="swiper-slide" data-swiper-autoplay="5000">
+                        <div class="block block--style-3">
+                            <div class="block-image relative">
+                                <div class="view view-first">
+                                    <a href="#">
+                                        <img src="../../assets/images/prv/real-estate/img-1.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <span class="block-ribbon block-ribbon-fixed block-ribbon-right bg-yellow">For sale</span>
+                                <span class="block-price-over bg-base-4">$15.000</span>
+                            </div>
+                            <div class="block-body text-center mt-1">
+                                <h3 class="heading heading-5 strong-400 text-normal mb-1">
+                                    <strong>1.5 km</strong>
+                                    <span class="heading-6">from you</span>
+                                </h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-autoplay="5000">
+                        <div class="block block--style-3">
+                            <div class="block-image relative">
+                                <div class="view view-first">
+                                    <a href="#">
+                                        <img src="../../assets/images/prv/real-estate/img-2.jpg" class="img-responsive">
+                                        <img src="/media/{{property.MediaId}}/{{property.Media.Name}}>
+                                    </a>
+                                </div>
+                                <span class="block-price-over bg-base-4">$24.000</span>
+                            </div>
+                            <div class="block-body text-center mt-1">
+                                <h3 class="heading heading-5 strong-400 text-normal mb-1">
+                                    <strong>3.4 km</strong>
+                                    <span class="heading-6">from you</span>
+                                </h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-autoplay="5000">
+                        <div class="block block--style-3">
+                            <div class="block-image relative">
+                                <div class="view view-first">
+                                    <a href="#">
+                                        <img src="../../assets/images/prv/real-estate/img-3.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <span class="block-price-over bg-base-4">$50.000</span>
+                            </div>
+                            <div class="block-body text-center mt-1">
+                                <h3 class="heading heading-5 strong-400 text-normal mb-1">
+                                    <strong>5.1 km</strong>
+                                    <span class="heading-6">from you</span>
+                                </h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-autoplay="5000">
+                        <div class="block block--style-3">
+                            <div class="block-image relative">
+                                <div class="view view-first">
+                                    <a href="#">
+                                        <img src="../../assets/images/prv/real-estate/img-4.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <span class="block-ribbon block-ribbon-fixed block-ribbon-right bg-green">Best value</span>
+                                <span class="block-price-over bg-base-4">$22.000</span>
+                            </div>
+                            <div class="block-body text-center mt-1">
+                                <h3 class="heading heading-5 strong-400 text-normal mb-1">
+                                    <strong>2.3 km</strong>
+                                    <span class="heading-6">from you</span>
+                                </h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-autoplay="5000">
+                        <div class="block block--style-3">
+                            <div class="block-image relative">
+                                <div class="view view-first">
+                                    <a href="#">
+                                        <img src="../../assets/images/prv/real-estate/img-5.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <span class="block-ribbon block-ribbon-fixed block-ribbon-right bg-green">Best value</span>
+                                <span class="block-price-over bg-base-4">$22.000</span>
+                            </div>
+                            <div class="block-body text-center mt-1">
+                                <h3 class="heading heading-5 strong-400 text-normal mb-1">
+                                    <strong>2.3 km</strong>
+                                    <span class="heading-6">from you</span>
+                                </h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-autoplay="5000">
+                        <div class="block block--style-3">
+                            <div class="block-image relative">
+                                <div class="view view-first">
+                                    <a href="#">
+                                        <img src="../../assets/images/prv/real-estate/img-6.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <span class="block-ribbon block-ribbon-fixed block-ribbon-right bg-green">Best value</span>
+                                <span class="block-price-over bg-base-4">$22.000</span>
+                            </div>
+                            <div class="block-body text-center mt-1">
+                                <h3 class="heading heading-5 strong-400 text-normal mb-1">
+                                    <strong>2.3 km</strong>
+                                    <span class="heading-6">from you</span>
+                                </h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div ng-include="'/app/views/_common/footer.html'"></div>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E6DFB5F-1816-424E-BB6A-133935D23E90}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMW.BAL</RootNamespace>
+    <AssemblyName>SMW.BAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\SMW.DAL\bin\Debug\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\SMW.EF\bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Concrete\CommentService.cs" />
+    <Compile Include="Concrete\DashBoardService.cs" />
+    <Compile Include="Concrete\FacilityService.cs" />
+    <Compile Include="Concrete\MediaService.cs" />
+    <Compile Include="Concrete\ProjectService.cs" />
+    <Compile Include="Concrete\PropertyService.cs" />
+    <Compile Include="Concrete\ServiceService.cs" />
+    <Compile Include="Concrete\UserService.cs" />
+    <Compile Include="Concrete\WebQueryService.cs" />
+    <Compile Include="Interface\ICommentService.cs" />
+    <Compile Include="Interface\IDashBoardService.cs" />
+    <Compile Include="Interface\IFacilityService.cs" />
+    <Compile Include="Interface\IMediaService.cs" />
+    <Compile Include="Interface\IProjectService.cs" />
+    <Compile Include="Interface\IPropertyService.cs" />
+    <Compile Include="Interface\IServiceService.cs" />
+    <Compile Include="Interface\IUserService.cs" />
+    <Compile Include="Interface\IWebQueryService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMW.DAL\SMW.DAL.csproj">
+      <Project>{aee7dd65-292c-41ee-81c3-2d0cd44ca311}</Project>
+      <Name>SMW.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMW.DTO\SMW.DTO.csproj">
+      <Project>{f9d8ecca-b517-41ee-8dfc-e644da8d9751}</Project>
+      <Name>SMW.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMW.EF\SMW.EF.csproj">
+      <Project>{bea960c1-40e8-421a-85d6-560bb4ab9856}</Project>
+      <Name>SMW.EF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMW.Helpers\SMW.Helpers.csproj">
+      <Project>{72ec3d0f-45cc-4598-bc1c-d95b59a30705}</Project>
+      <Name>SMW.Helpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMW.Library\SMW.Library.csproj">
+      <Project>{fd2d4c42-01b6-4ba1-93a8-6a5bddb54d83}</Project>
+      <Name>SMW.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMW.Models\SMW.Models.csproj">
+      <Project>{7945906f-4bcf-4b69-91df-e0ab9181a878}</Project>
+      <Name>SMW.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

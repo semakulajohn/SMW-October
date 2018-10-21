@@ -1,0 +1,335 @@
+<!-- Header -->
+<div id="header" ng-include="'/app/views/_common/header.html?t=1'"></div>
+
+<!-- Navigation -->
+
+    <aside id="menu"  ng-include="'/app/views/_common/navigation.html?t=1d'"></aside>
+ 
+
+<!-- Main Wrapper -->
+<div id="wrapper" >
+
+    <div id="dasboard" class="content" animate-panel effect="zoomIn">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                            <h3 class="m-xs text-uppercase">
+                                Welcome to SMW  <span ng-if="loadingSpinner" class="loadingSpinner"><img src="/images/loading-bars.svg" /></span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row" ng-controller="NavController">
+            
+
+              
+
+                <!--Page content-->
+                <!--===================================================-->
+                <div ng-if="isAdmin" id="page-content" ng-controller="DashboardController">
+
+                    <!--Tiles - Bright Version-->
+                    <!--===================================================-->
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+
+                            <!--Registered User-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <div class="panel media pad-all">
+                                <div class="media-left">
+                                    <span class="icon-wrap icon-wrap-sm icon-circle bg-success">
+                                        <i class="fa fa-user fa-2x"></i>
+                                    </span>
+                                </div>
+
+                                <div class="media-body">
+                                    <p class="text-2x mar-no text-thin">{{dashBoardData.NumberOfExternalUsers}} </p>
+                                    <p class="text-muted mar-no">Registered External Users</p>
+                                </div>
+                            </div>
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+
+                            <!--New Order-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <div class="panel media pad-all">
+                                <div class="media-left">
+                                    <span class="icon-wrap icon-wrap-sm icon-circle bg-info">
+                                        <i class="fa fa-xing-square fa-2x"></i>
+                                    </span>
+                                </div>
+
+                                <div class="media-body">
+                                    <p class="text-2x mar-no text-thin">{{dashBoardData.NumberOfClients}} </p>
+                                    <p class="text-muted mar-no">Clients</p>
+                                </div>
+                            </div>
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+
+                            <!--Comments-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <div class="panel media pad-all">
+                                <div class="media-left">
+                                    <span class="icon-wrap icon-wrap-sm icon-circle bg-warning">
+                                        <i class="fa fa-bell fa-2x"></i>
+                                    </span>
+                                </div>
+
+                                <div class="media-body">
+                                    <p class="text-2x mar-no text-thin">{{dashBoardData.NumberOfPropertiesForRent}}</p>
+                                    <p class="text-muted mar-no">Properties For Rent</p>
+                                </div>
+                            </div>
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+
+                            <!--Sales-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <div class="panel media pad-all">
+                                <div class="media-left">
+                                    <span class="icon-wrap icon-wrap-sm icon-circle bg-danger">
+                                        <i class="fa fa-diamond fa-2x"></i>
+                                    </span>
+                                </div>
+
+                                <div class="media-body">
+                                    <p class="text-2x mar-no text-thin">{{dashBoardData.NumberOfPropertiesForSale}} </p>
+                                    <p class="text-muted mar-no">Properties For Sale</p>
+                                </div>
+                            </div>
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                        </div>
+                    </div>
+                    <!--===================================================-->
+                    <!--End Tiles - Bright Version-->
+                    <!--Large tile-->
+                    <div class="row">
+                        <!--Large tile (Visit Today)-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <div class="col-sm-6 col-md-3">
+                            <div class="panel panel-dark panel-colorful">
+                                <div class="panel-body text-center">
+                                    <p class="text-uppercase mar-btm text-sm">Users</p>
+                                    <i class="fa fa-users fa-5x"></i>
+                                    <hr>
+                                    <p class="h2 text-thin">{{dashBoardData.NumberOfExternalUsers}}</p>
+                                    <small><span class="text-semibold"></span>External Users</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End large tile (Visit Today)-->
+                        <!--Large tile (Comments)-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <div class="col-sm-6 col-md-3">
+                            <div class="panel panel-success panel-colorful">
+                                <div class="panel-body text-center">
+                                    <p class="text-uppercase mar-btm text-sm">On Going Projects</p>
+                                    <i class="fa fa-diamond fa-5x"></i>
+                                    <hr>
+                                    <p class="h2 text-thin">{{dashBoardData.NumberOfCompletedProjects}}</p>
+                                    <small><span class="text-semibold"><i class="fa fa-unlock-alt fa-fw"></i> </span>Number of Ongoing Projects</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--Large tile (Comments)-->
+                        <!--Large tile (New orders)-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <div class="col-sm-6 col-md-3">
+                            <div class="panel panel-primary panel-colorful">
+                                <div class="panel-body text-center">
+                                    <p class="text-uppercase mar-btm text-sm">Completed Projects</p>
+                                    <i class="fa fa-building fa-5x"></i>
+                                    <hr>
+                                    <p class="h2 text-thin">{{dashBoardData.NumberOfCompletedProjects}}</p>
+                                    <small><span class="text-semibold"><i class="fa fa-shopping-cart fa-fw"></i> </span> Number of completed projects</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End Large tile (New orders)-->
+                        <!--Large tile (Comments)-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <div class="col-sm-6 col-md-3">
+                            <div class="panel panel-danger panel-colorful">
+                                <div class="panel-body text-center">
+                                    <p class="text-uppercase mar-btm text-sm">WebQueries</p>
+                                    <i class="fa fa-comments fa-5x"></i>
+                                    <hr>
+                                    <p class="h2 text-thin">{{dashBoardData.NumberOfUnRespondedToWebQueries}}</p>
+                                    <small><span class="text-semibold"><i class="fa fa-unlock-alt fa-fw"></i> </span> Number of WebQueries</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--Large tile (Comments)-->
+                    </div>
+                </div>
+
+                <div ng-if="isUser" id="page-content" ng-controller="DashboardController">
+                   
+                    <div class="row">
+                        <!--Large tile (Visit Today)-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <div class="col-sm-12 col-md-6 center">
+                            <div class="panel panel-danger panel-colorful">
+                                <div class="panel-body text-center">
+                                    <p class="text-uppercase mar-btm text-sm">My Properties</p>
+                                    <a href="#/properties/{{user.Id}}">
+                                        <i class="fa fa-building fa-5x"></i>
+                                        <hr>
+
+                                        <small><span class="text-semibold"></span> MY Properties</small>
+                                        </a>
+</div>
+                            </div>
+                        </div>
+                 
+                     
+                    </div>
+
+                </div>
+
+                <div ng-if="isClient" id="page-content" ng-controller="DashboardController">
+
+                    <!--<div class="row">
+                        <div class="col-sm-6 col-lg-3">
+
+                            <!--Registered User
+                            
+                            <div class="panel media pad-all">
+                                <div class="media-left">
+                                    <span class="icon-wrap icon-wrap-sm icon-circle bg-success">
+                                        <i class="fa fa-user fa-2x"></i>
+                                    </span>
+                                </div>
+
+                                <div class="media-body">
+                                    <p class="text-2x mar-no text-thin">{{dashBoardData.NumberOfExternalUsers}} </p>
+                                    <p class="text-muted mar-no">Registered External Users</p>
+                                </div>
+                            </div>
+                            <!--~~~~~~~~~~~~~~~~~
+
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+
+                            <!--New Order-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~
+                            <div class="panel media pad-all">
+                                <div class="media-left">
+                                    <span class="icon-wrap icon-wrap-sm icon-circle bg-info">
+                                        <i class="fa fa-file-text fa-2x"></i>
+                                    </span>
+                                </div>
+
+                                <div class="media-body">
+                                    <p class="text-2x mar-no text-thin">{{dashBoardData.NumberOfOnGoingProjects}} </p>
+                                    <p class="text-muted mar-no">Projects</p>
+                                </div>
+                            </div>
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~
+
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+
+                            <!--Comments-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~
+                            <div class="panel media pad-all">
+                                <div class="media-left">
+                                    <span class="icon-wrap icon-wrap-sm icon-circle bg-warning">
+                                        <i class="fa fa-file-text fa-2x"></i>
+                                    </span>
+                                </div>
+
+                                <div class="media-body">
+                                    <p class="text-2x mar-no text-thin">{{dashBoardData.NumberOfPropertiesForRent}} 8,743</p>
+                                    <p class="text-muted mar-no">Properties For Rent</p>
+                                </div>
+                            </div>
+                            <!--~~~~~~~~~~~~~~~~~~~~~~
+
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+
+                            <!--Sales-->
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                            <div class="panel media pad-all">
+                                <div class="media-left">
+                                    <span class="icon-wrap icon-wrap-sm icon-circle bg-danger">
+                                        <i class="fa fa-diamond fa-2x"></i>
+                                    </span>
+                                </div>
+
+                                <div class="media-body">
+                                    <p class="text-2x mar-no text-thin">{{dashBoardData.NumberOfPropertiesForSale}} 7,201</p>
+                                    <p class="text-muted mar-no">Houses For Sale</p>
+                                </div>
+                            </div>
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                        </div>
+                    </div>-->
+                    <div class="row">
+                       
+                        <div class="col-sm-6 col-md-6">
+                            <div class="panel panel-danger panel-colorful">
+                                <div class="panel-body text-center">
+                                    <p class="text-uppercase mar-btm text-sm">My Projects</p>
+
+                                    <a href="#/projects/{{user.Id}} ">
+                                        <i class="fa fa-diamond fa-5x "></i>
+                                        <hr>
+                                       
+                                        <small><span class="text-semibold"><i class="fa fa-unlock-alt fa-fw"></i> </span>  Projects</small>
+                                    </a>
+                                         </div>
+                            </div>
+                        </div>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--Large tile (Comments)-->
+                        <!--Large tile (New orders)-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <div class="col-sm-6 col-md-6">
+                            <div class="panel panel-primary panel-colorful">
+                                <div class="panel-body text-center">
+                                    <p class="text-uppercase mar-btm text-sm">My Properties</p>
+                                    <a href="#/properties/{{user.Id}}">
+                                        <i class="fa fa-file-text fa-5x"></i>
+                                        <hr>
+                                      
+                                        <small><span class="text-semibold"><i class="fa fa-shopping-cart fa-fw"></i></span> properties for rent and sale</small>
+                                    </a>
+</div>
+                            </div>
+                        </div>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End Large tile (New orders)-->
+                        <!--Large tile (Comments)-->
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    
+                    </div>
+
+                </div>
+
+                </div>
+        </div>
+     
+        </div>
+
+      
+</div>

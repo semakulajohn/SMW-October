@@ -1,0 +1,68 @@
+﻿<div ng-include="'/app/views/_common/nav.html'"></div>
+
+<div class="" ng-controller="OnGoingProjectController">
+    <section class="slice-lg page-title bg-minimalist">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h3 class="heading heading-1 strong-400 text-capitalize mb-2">
+                           
+                        </h3>
+                    </div>
+                   
+                    <div class="fluid-paragraph text-center mt-4">
+                        <p class="heading heading-2 strong-500 mb-0">
+                            Have a feel of some of our ongoing work
+                        </p>
+                        <a class="btn btn-styled btn-base-4 mt-4 c-white" data-scroll-to="/Home/Propertysct_products">
+                            OnGoing Projects
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="slice sct-color-1" id="sct_products">
+        <div class="container">
+            <div class="row-wrapper">
+                <div class="row cols-xs-space cols-sm-space cols-md-space">
+
+                    <div class="col-lg-3 col-md-6 col-6" ng-repeat="project in onGoingProjects">
+                        <div class="block product no-radius">
+                            <div class="product-image">
+                                <div class="view view-first">
+                                    <a href="#/projects/view/{{project.ProjectId}}/{{project.MediaFolderId}}">
+                                      
+                                        <img src="media/{{project.MediaForView.MediaId}}/{{project.MediaForView.Name}}" alt="{{project.Media.Name}}">
+
+                                    </a>
+                                </div>
+                                <div class="product-actions--a product-actions--2" data-animation-in="slideInRight" data-animation-out="slideOutRight">
+                                    <button type="button" class="btn-product-action">
+                                        <i class="ion-bag"></i>
+                                    </button>
+                                    <button type="button" class="btn-product-action">
+                                        <i class="ion-ios-heart-outline"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="block-body px-0">
+                                <h3 class="heading heading-6 strong-500 text-capitalize mb-0">{{project.Title}}</h3>
+                               
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+           
+        </div>
+    </section>
+</div>
+
+<div ng-include="'/app/views/_common/footer.html'"></div>

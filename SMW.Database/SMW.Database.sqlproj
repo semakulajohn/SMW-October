@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>SMW.Database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{f53a91c5-5d08-488b-a05a-dc1b8a14c5ae}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>SMW.Database</RootNamespace>
+    <AssemblyName>SMW.Database</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- VS10 without SP1 will not have VisualStudioVersion set, so do that here -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- Default to the v10.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\storedprocedures" />
+    <Folder Include="dbo\tables" />
+    <Folder Include="dbo\tables\AspNet" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\tables\AspNet\AspNetRoles.sql" />
+    <Build Include="dbo\tables\AspNet\AspNetUserClaims.sql" />
+    <Build Include="dbo\tables\AspNet\AspNetUserLogins.sql" />
+    <Build Include="dbo\tables\AspNet\AspNetUserRoles.sql" />
+    <Build Include="dbo\tables\AspNet\AspNetUsers.sql" />
+    <Build Include="dbo\tables\ExtensionType.sql" />
+    <Build Include="dbo\tables\Media.sql" />
+    <Build Include="dbo\tables\MediaType.sql" />
+    <Build Include="dbo\storedprocedures\Media_GetDescendants.sql" />
+    <Build Include="dbo\storedprocedures\Media_GetPath.sql" />
+    <Build Include="dbo\storedprocedures\Media_GetPathCsvMediaId.sql" />
+    <Build Include="dbo\storedprocedures\Media_SetPath.sql" />
+    <Build Include="dbo\tables\Project.sql" />
+    <Build Include="dbo\tables\Comment.sql" />
+    <Build Include="dbo\tables\WebQuery.sql" />
+    <Build Include="dbo\tables\Property.sql" />
+    <Build Include="dbo\tables\Service.sql" />
+    <Build Include="dbo\tables\PropertyType.sql" />
+    <Build Include="dbo\storedprocedures\Mark_Property_And_RelatedData_AsDeleted.sql" />
+    <Build Include="dbo\storedprocedures\Mark_Project_And_RelatedData_AsDeleted.sql" />
+    <Build Include="dbo\storedprocedures\Mark_Service_And_RelatedData_AsDeleted.sql" />
+    <Build Include="dbo\tables\Facility.sql" />
+    <Build Include="dbo\tables\FacilityType.sql" />
+    <Build Include="dbo\tables\RentalPeriod.sql" />
+    <Build Include="dbo\storedprocedures\Property_Publish.sql" />
+    <Build Include="dbo\tables\Video.sql" />
+    <Build Include="dbo\storedprocedures\Property_UnPublish.sql" />
+    <Build Include="dbo\storedprocedures\Video_Publish.sql" />
+    <Build Include="dbo\storedprocedures\Video_UnPublish.sql" />
+    <Build Include="dbo\tables\Status.sql" />
+    <Build Include="dbo\storedprocedures\Mark_Comment_And_RelatedData_AsDeleted.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SMW.Database.publish.xml" />
+    <None Include="SMW.Database_New.publish.publish.xml" />
+  </ItemGroup>
+</Project>
