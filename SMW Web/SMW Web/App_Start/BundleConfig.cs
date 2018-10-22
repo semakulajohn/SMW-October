@@ -78,7 +78,7 @@ namespace SMW_Web
             .Include("~/bower_components/angular-animate/angular-animate.min.js")
             .Include("~/bower_components/angular-ui-router/release/angular-ui-router.min.js")
             .Include("~/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js")
-            .Include("~/bower_components/bootstrap/dist/js/bootstrap.min.js")
+            
             .Include("~/bower_components/jquery-flot/jquery.flot.js")
             .Include("~/bower_components/jquery-flot/jquery.flot.resize.js")
             .Include("~/bower_components/jquery-flot/jquery.flot.pie.js")
@@ -115,7 +115,7 @@ namespace SMW_Web
             .Include("~/bower_components/ng-table/ng-table.min.js")
             .Include("~/bower_components/ngStorage/ngStorage.min.js")
             .Include("~/js/angular-ui/ui-grid/ui-grid.min.js")
-
+            .Include("~/bower_components/bootstrap/dist/js/bootstrap.min.js")
             .Include("~/bower_components/angular-route/angular-route.min.js");
 
             bundle.Orderer = new NonOrderingBundleOrderer();

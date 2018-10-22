@@ -13,7 +13,7 @@
 
                 <div class="clear0"></div>
 
-                <a ui-sref="project-edit({ action: 'create', projectId: 0,mediaFolderId: 0})" class="btn btn-info btn-sm"><i class="fa fa-plus"></i> Add Project</a>
+                <a ng-show="isAdmin" ui-sref=" project-edit({ action 'create' , projectid 0,mediafolderid 0})" class="btn btn-info btn-sm"><i class="fa fa-plus"></i> Add Project</a>
 
                 <span ng-if="loadingSpinner" class="loadingSpinner">
                     <img src="/images/loading-bars.svg" width="45" height="45" /> Loading...

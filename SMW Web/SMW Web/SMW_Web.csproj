@@ -3353,8 +3353,6 @@
     <Content Include="[Config]\dev\ConnectionStrings.config" />
     <Content Include="[Config]\prod\AppSettings.config" />
     <Content Include="[Config]\prod\ConnectionStrings.config" />
-    <Content Include="[Config]\qa\AppSettings.config" />
-    <Content Include="[Config]\qa\ConnectionStrings.config" />
     <Content Include="Views\Home\RentalList.cshtml" />
     <Content Include="Views\Home\ForSaleList.cshtml" />
   </ItemGroup>

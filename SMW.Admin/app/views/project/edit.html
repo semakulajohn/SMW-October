@@ -159,7 +159,7 @@
                                             </div>
                                             
                                                 <!-- upload Files -->
-                                                <div ng-if="mediaFolderId > 0" class="well well-small" style="padding-bottom: 0;" nv-file-drop="" uploader="uploader" filters="queueLimit, customFilter" ng-show="showUploadFiles">
+                                                <div ng-show="isAdmin" ng-if="mediaFolderId > 0" class="well well-small" style="padding-bottom: 0;" nv-file-drop="" uploader="uploader" filters="queueLimit, customFilter" ng-show="showUploadFiles">
                                                     <div class="row">
                                                         <div class="col-md-12">
                                                             <input type="file" nv-file-select="" uploader="uploader" multiple />
