@@ -6,11 +6,11 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>F:\GitHub\Higgz\Eng\Live\admin2</_PublishTargetUrl>
+    <_PublishTargetUrl>F:\GitHub\Higgz\Eng\Live\admin1022</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="app/scripts/app.js">
-      <publishTime>08/25/2018 15:10:46</publishTime>
+      <publishTime>10/21/2018 16:40:58</publishTime>
     </File>
     <File Include="app/scripts/config.js">
       <publishTime>10/03/2018 08:02:11</publishTime>
@@ -211,10 +211,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/10/2018 12:13:06</publishTime>
     </File>
     <File Include="app/views/project/edit.html">
-      <publishTime>10/12/2018 00:42:25</publishTime>
+      <publishTime>10/21/2018 23:27:23</publishTime>
     </File>
     <File Include="app/views/project/list.html">
-      <publishTime>07/28/2018 09:52:31</publishTime>
+      <publishTime>10/21/2018 23:15:33</publishTime>
     </File>
     <File Include="app/views/project/media-detail.html">
       <publishTime>07/24/2018 15:55:43</publishTime>
@@ -406,19 +406,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/27/2017 11:25:57</publishTime>
     </File>
     <File Include="bin/SMW.Admin.dll">
-      <publishTime>10/19/2018 20:27:08</publishTime>
+      <publishTime>10/22/2018 15:48:46</publishTime>
     </File>
     <File Include="bin/SMW.BAL.dll">
-      <publishTime>10/19/2018 07:21:59</publishTime>
+      <publishTime>10/22/2018 12:13:14</publishTime>
     </File>
     <File Include="bin/SMW.DAL.dll">
-      <publishTime>10/19/2018 07:19:18</publishTime>
+      <publishTime>10/22/2018 12:13:12</publishTime>
     </File>
     <File Include="bin/SMW.DependencyResolver.dll">
-      <publishTime>10/19/2018 07:22:01</publishTime>
+      <publishTime>10/22/2018 12:13:16</publishTime>
     </File>
     <File Include="bin/SMW.DTO.dll">
-      <publishTime>10/09/2018 17:47:33</publishTime>
+      <publishTime>10/22/2018 12:13:10</publishTime>
     </File>
     <File Include="bin/SMW.EF.dll">
       <publishTime>10/19/2018 07:19:15</publishTime>
@@ -8671,7 +8671,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/27/2018 10:58:04</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/19/2018 11:33:15</publishTime>
+      <publishTime>10/22/2018 15:47:11</publishTime>
     </File>
     <File Include="[Config]/dev/AppSettings.config">
       <publishTime>10/19/2018 06:14:52</publishTime>

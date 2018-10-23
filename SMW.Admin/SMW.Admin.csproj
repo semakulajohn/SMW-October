@@ -3101,8 +3101,6 @@
     <Content Include="[Config]\dev\ConnectionStrings.config" />
     <Content Include="[Config]\prod\AppSettings.config" />
     <Content Include="[Config]\prod\ConnectionStrings.config" />
-    <Content Include="[Config]\qa\AppSettings.config" />
-    <Content Include="[Config]\qa\ConnectionStrings.config" />
     <Content Include="Views\UsersAdmin\Create.cshtml" />
     <Content Include="Views\UsersAdmin\Delete.cshtml" />
     <Content Include="Views\UsersAdmin\Details.cshtml" />
