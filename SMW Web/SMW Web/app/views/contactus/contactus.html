@@ -24,7 +24,10 @@
         <!-- #google-container will contain the map  -->
         <div id="map_canvas" class="map-canvas"></div>
     </div>
-
+    <iframe width="600"
+            height="450"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/view?key=AIzaSyBHSuz_ddwrCpNKitt_-PdWA3RbWXWWm9U&center=-33.8569,151.2152&q=butikiro+road" allowfullscreen></iframe>
 
     <section class="slice sct-color-1;">
         <div class="container">
@@ -123,7 +126,7 @@
                                 <div class="form-group">
 
                                     <button id="submit" ng-click="Save(webQuery)" class="btn btn-styled btn-base-1 mt-4">
-                                        Send Message
+                                        <i class="fa fa-envelope">  Send Message </i> 
                                     </button>
                                 </div>
                         </div>
@@ -177,7 +180,10 @@
         });
     }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHSuz_ddwrCpNKitt_-PdWA3RbWXWWm9U&callback=initMap"
-            async defer></script>
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHSuz_ddwrCpNKitt_-PdWA3RbWXWWm9U&callback=initMap"
+            async defer></script>-->
+    <!--<script src="https://www.google.com/maps/embed/v1/view?key=AIzaSyBHSuz_ddwrCpNKitt_-PdWA3RbWXWWm9U&center=uluru&zoom=18&maptype=satellite"
+            ></script>-->
+
 </section>
     <div ng-include="'/app/views/_common/footer.html'"></div>

@@ -481,7 +481,10 @@
     <Content Include="assets\images\prv\real-estate\img-slider-1.jpg" />
     <Content Include="assets\images\prv\real-estate\img-slider-2.jpg" />
     <Content Include="assets\images\prv\real-estate\img-slider-3.jpg" />
+    <Content Include="assets\images\team\Eddie.jpg" />
+    <Content Include="assets\images\team\sam.jpg" />
     <Content Include="assets\images\team\team1.jpg" />
+    <Content Include="assets\images\team\willy.jpg" />
     <Content Include="assets\js\boomerang.min.js" />
     <Content Include="assets\js\boomerang.switcher.js" />
     <Content Include="assets\js\classie.js" />

@@ -3097,7 +3097,9 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Shared\_LayoutMvc.cshtml" />
-    <Content Include="[Config]\dev\AppSettings.config" />
+    <Content Include="[Config]\dev\AppSettings.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="[Config]\dev\ConnectionStrings.config" />
     <Content Include="[Config]\prod\AppSettings.config" />
     <Content Include="[Config]\prod\ConnectionStrings.config" />
