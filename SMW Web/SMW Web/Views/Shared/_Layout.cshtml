@@ -3,6 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <title> SMW</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129742027-1"></script>
+   
     <link href="../../assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
     @*@Styles.Render("~/Content/css")*@
@@ -117,12 +120,15 @@
     <script src="../../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
    @* <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104437451-1"></script>*@
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129742027-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
-        gtag('config', 'UA-104437451-1');
+        gtag('config', 'UA-129742027-1');
     </script>
 
     <!-- App JS -->
@@ -133,7 +139,16 @@
     <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
     <script src="../../assets/js/boomerang.min.js"></script>
 
-
+    <!--Swipper js-->
+    @*<script>
+    var swiper = new Swiper('.swiper-container', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    </script>*@
+   
     <script src="~/app/scripts/app.js"></script>
     <script src="~/app/scripts/config.js"></script>
     <script src="~/app/scripts/directives/directives.js"></script>
@@ -148,5 +163,24 @@
   
 
     <script src="~/assets/js/Custom.js"></script>
+
+     @*<script>
+    
+
+    function initMap() {
+        //var uluru = new google.maps.LatLng(0.3111137, 32.5615422);
+        var uluru = { lat: 0.3111137, lng: 32.5615422 }
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHSuz_ddwrCpNKitt_-PdWA3RbWXWWm9U&callback=initMap"></script>*@
+
 </body>
 </html>

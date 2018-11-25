@@ -70,7 +70,7 @@ namespace SMW_Web
             bundles.Add(bundleStyles);
 
             var bundle = new ScriptBundle("~/bundles/bower_components")
-            .Include("~/bower_components/jquery/dist/jquery.min.js")
+            //.Include("~/bower_components/jquery/dist/jquery.min.js")
             .Include("~/bower_components/jquery-ui/jquery-ui.min.js")
             .Include("~/bower_components/slimScroll/jquery.slimscroll.min.js")
             .Include("~/bower_components/angular/angular.min.js")

@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>F:\GitHub\Higgz\Eng\Live\smw1111</_PublishTargetUrl>
+    <_PublishTargetUrl>F:\GitHub\Higgz\Eng\Live\smw1125</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="app/scripts/app.js">
@@ -184,94 +184,94 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/09/2017 19:29:54</publishTime>
     </File>
     <File Include="app/views/aboutus/aboutus.html">
-      <publishTime>10/17/2018 12:58:17</publishTime>
+      <publishTime>11/25/2018 15:42:10</publishTime>
     </File>
     <File Include="app/views/contactus/contactus.html">
-      <publishTime>10/19/2018 10:55:02</publishTime>
+      <publishTime>11/24/2018 03:56:03</publishTime>
     </File>
     <File Include="app/views/dashboard.html">
-      <publishTime>10/17/2018 12:30:55</publishTime>
+      <publishTime>11/25/2018 15:49:30</publishTime>
     </File>
     <File Include="app/views/design/view.html">
-      <publishTime>10/12/2018 16:54:50</publishTime>
+      <publishTime>11/25/2018 15:25:48</publishTime>
     </File>
     <File Include="app/views/facility/details.html">
-      <publishTime>10/15/2018 12:25:18</publishTime>
+      <publishTime>11/24/2018 03:56:05</publishTime>
     </File>
     <File Include="app/views/facility/view.html">
-      <publishTime>10/15/2018 11:14:48</publishTime>
+      <publishTime>11/24/2018 03:56:05</publishTime>
     </File>
     <File Include="app/views/land/view.html">
-      <publishTime>10/10/2018 09:29:56</publishTime>
+      <publishTime>11/24/2018 03:56:07</publishTime>
     </File>
     <File Include="app/views/partner/view.html">
-      <publishTime>10/10/2018 14:38:21</publishTime>
+      <publishTime>11/24/2018 03:56:08</publishTime>
     </File>
     <File Include="app/views/project/completedlist.html">
-      <publishTime>10/16/2018 22:19:46</publishTime>
+      <publishTime>11/24/2018 03:56:11</publishTime>
     </File>
     <File Include="app/views/project/details.html">
-      <publishTime>10/15/2018 12:47:20</publishTime>
+      <publishTime>11/24/2018 03:56:10</publishTime>
     </File>
     <File Include="app/views/project/list.html">
-      <publishTime>05/10/2018 20:44:11</publishTime>
+      <publishTime>11/24/2018 03:56:09</publishTime>
     </File>
     <File Include="app/views/project/ongoinglist.html">
-      <publishTime>10/16/2018 22:23:43</publishTime>
+      <publishTime>11/24/2018 03:56:09</publishTime>
     </File>
     <File Include="app/views/property/details.html">
-      <publishTime>10/13/2018 07:20:50</publishTime>
+      <publishTime>11/24/2018 03:56:14</publishTime>
     </File>
     <File Include="app/views/property/list.html">
-      <publishTime>08/22/2018 10:18:58</publishTime>
+      <publishTime>11/24/2018 03:56:13</publishTime>
     </File>
     <File Include="app/views/property/rentallist.html">
-      <publishTime>10/15/2018 20:42:28</publishTime>
+      <publishTime>11/24/2018 03:56:12</publishTime>
     </File>
     <File Include="app/views/property/salelist.html">
-      <publishTime>10/13/2018 07:18:44</publishTime>
+      <publishTime>11/24/2018 03:56:12</publishTime>
     </File>
     <File Include="app/views/service/details.html">
-      <publishTime>09/28/2018 01:23:59</publishTime>
+      <publishTime>11/24/2018 03:56:16</publishTime>
     </File>
     <File Include="app/views/service/list.html">
-      <publishTime>10/16/2018 12:25:58</publishTime>
+      <publishTime>11/24/2018 03:56:15</publishTime>
     </File>
     <File Include="app/views/team/ourteam.html">
-      <publishTime>10/18/2018 16:43:26</publishTime>
+      <publishTime>11/24/2018 03:56:17</publishTime>
     </File>
     <File Include="app/views/_common/Breadcrumb.html">
-      <publishTime>01/09/2017 19:29:54</publishTime>
+      <publishTime>11/24/2018 03:56:24</publishTime>
     </File>
     <File Include="app/views/_common/content.html">
-      <publishTime>01/09/2017 19:29:54</publishTime>
+      <publishTime>11/24/2018 03:56:23</publishTime>
     </File>
     <File Include="app/views/_common/content_blank.html">
-      <publishTime>01/09/2017 19:29:54</publishTime>
+      <publishTime>11/24/2018 03:56:23</publishTime>
     </File>
     <File Include="app/views/_common/content_empty.html">
-      <publishTime>01/09/2017 19:29:54</publishTime>
+      <publishTime>11/24/2018 03:56:22</publishTime>
     </File>
     <File Include="app/views/_common/content_small.html">
-      <publishTime>01/09/2017 19:29:54</publishTime>
+      <publishTime>11/24/2018 03:56:22</publishTime>
     </File>
     <File Include="app/views/_common/footer.html">
-      <publishTime>10/12/2018 07:20:57</publishTime>
+      <publishTime>11/24/2018 03:56:21</publishTime>
     </File>
     <File Include="app/views/_common/header.html">
-      <publishTime>05/09/2018 11:38:44</publishTime>
+      <publishTime>11/24/2018 03:56:21</publishTime>
     </File>
     <File Include="app/views/_common/nav.html">
-      <publishTime>10/12/2018 14:11:29</publishTime>
+      <publishTime>11/24/2018 03:56:20</publishTime>
     </File>
     <File Include="app/views/_common/navigation.html">
-      <publishTime>10/08/2018 12:06:50</publishTime>
+      <publishTime>11/24/2018 03:56:19</publishTime>
     </File>
     <File Include="app/views/_common/panel_tools.html">
-      <publishTime>01/09/2017 19:29:54</publishTime>
+      <publishTime>11/24/2018 03:56:19</publishTime>
     </File>
     <File Include="app/views/_common/profile.html">
-      <publishTime>01/04/2018 14:52:05</publishTime>
+      <publishTime>11/24/2018 03:56:18</publishTime>
     </File>
     <File Include="assets/css/boomerang.min.css">
       <publishTime>06/06/2018 10:11:36</publishTime>
@@ -503,6 +503,63 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="assets/images/favicon.png">
       <publishTime>06/09/2018 10:13:34</publishTime>
+    </File>
+    <File Include="assets/images/home/adv/adv.jpg">
+      <publishTime>11/16/2018 13:47:22</publishTime>
+    </File>
+    <File Include="assets/images/home/design.jpg">
+      <publishTime>11/20/2018 10:34:04</publishTime>
+    </File>
+    <File Include="assets/images/home/design/design.jpg">
+      <publishTime>11/23/2018 04:42:50</publishTime>
+    </File>
+    <File Include="assets/images/home/design/design1.jpg">
+      <publishTime>11/23/2018 04:42:32</publishTime>
+    </File>
+    <File Include="assets/images/home/design/design2.jpg">
+      <publishTime>11/23/2018 04:42:40</publishTime>
+    </File>
+    <File Include="assets/images/home/design/design3.jpg">
+      <publishTime>11/23/2018 04:42:47</publishTime>
+    </File>
+    <File Include="assets/images/home/design/design4.jpg">
+      <publishTime>11/23/2018 04:42:43</publishTime>
+    </File>
+    <File Include="assets/images/home/design/design5.jpg">
+      <publishTime>11/23/2018 04:42:55</publishTime>
+    </File>
+    <File Include="assets/images/home/design/design6.jpg">
+      <publishTime>11/23/2018 04:42:45</publishTime>
+    </File>
+    <File Include="assets/images/home/design/design7.jpg">
+      <publishTime>11/23/2018 04:42:34</publishTime>
+    </File>
+    <File Include="assets/images/home/design/design8.jpg">
+      <publishTime>11/23/2018 04:42:37</publishTime>
+    </File>
+    <File Include="assets/images/home/design/design9.jpg">
+      <publishTime>11/23/2018 04:42:52</publishTime>
+    </File>
+    <File Include="assets/images/home/hous.jpg">
+      <publishTime>11/20/2018 10:39:06</publishTime>
+    </File>
+    <File Include="assets/images/home/house.jpg">
+      <publishTime>11/20/2018 10:41:13</publishTime>
+    </File>
+    <File Include="assets/images/home/house1.jpg">
+      <publishTime>11/20/2018 10:44:15</publishTime>
+    </File>
+    <File Include="assets/images/home/house2.jpg">
+      <publishTime>11/20/2018 11:06:58</publishTime>
+    </File>
+    <File Include="assets/images/home/house3.jpg">
+      <publishTime>11/20/2018 11:09:57</publishTime>
+    </File>
+    <File Include="assets/images/home/house4.jpg">
+      <publishTime>11/20/2018 11:11:56</publishTime>
+    </File>
+    <File Include="assets/images/home/house5.jpg">
+      <publishTime>11/20/2018 11:43:58</publishTime>
     </File>
     <File Include="assets/images/icons/cards/maestro.png">
       <publishTime>06/06/2018 10:11:37</publishTime>
@@ -2130,8 +2187,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="assets/images/slider/purpleway.jpg">
       <publishTime>06/06/2018 10:11:48</publishTime>
     </File>
+    <File Include="assets/images/team/Eddie.jpg">
+      <publishTime>10/23/2018 12:01:38</publishTime>
+    </File>
+    <File Include="assets/images/team/sam.jpg">
+      <publishTime>10/23/2018 12:01:38</publishTime>
+    </File>
     <File Include="assets/images/team/team1.jpg">
       <publishTime>11/11/2016 12:23:06</publishTime>
+    </File>
+    <File Include="assets/images/team/willy.jpg">
+      <publishTime>10/23/2018 12:01:38</publishTime>
     </File>
     <File Include="assets/js/boomerang.min.js">
       <publishTime>06/09/2018 09:01:35</publishTime>
@@ -2509,31 +2575,31 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/06/2018 10:10:19</publishTime>
     </File>
     <File Include="bin/SMW.BAL.dll">
-      <publishTime>10/22/2018 12:13:14</publishTime>
+      <publishTime>11/25/2018 16:48:12</publishTime>
     </File>
     <File Include="bin/SMW.DAL.dll">
-      <publishTime>10/22/2018 12:13:12</publishTime>
+      <publishTime>11/25/2018 16:48:09</publishTime>
     </File>
     <File Include="bin/SMW.DependencyResolver.dll">
-      <publishTime>10/22/2018 12:13:16</publishTime>
+      <publishTime>11/25/2018 16:48:14</publishTime>
     </File>
     <File Include="bin/SMW.DTO.dll">
-      <publishTime>10/22/2018 12:13:10</publishTime>
+      <publishTime>11/25/2018 16:48:05</publishTime>
     </File>
     <File Include="bin/SMW.EF.dll">
-      <publishTime>10/19/2018 07:19:15</publishTime>
+      <publishTime>11/25/2018 16:48:06</publishTime>
     </File>
     <File Include="bin/SMW.Helpers.dll">
-      <publishTime>10/19/2018 07:19:18</publishTime>
+      <publishTime>11/25/2018 16:48:08</publishTime>
     </File>
     <File Include="bin/SMW.Interfaces.dll">
-      <publishTime>10/19/2018 07:19:14</publishTime>
+      <publishTime>11/25/2018 16:48:07</publishTime>
     </File>
     <File Include="bin/SMW.Models.dll">
-      <publishTime>10/19/2018 07:19:14</publishTime>
+      <publishTime>11/25/2018 16:48:05</publishTime>
     </File>
     <File Include="bin/SMW_Web.dll">
-      <publishTime>10/22/2018 12:15:43</publishTime>
+      <publishTime>11/25/2018 16:48:21</publishTime>
     </File>
     <File Include="bin/System.Spatial.dll">
       <publishTime>06/06/2018 10:10:19</publishTime>
@@ -10861,7 +10927,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/06/2018 10:10:10</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>10/22/2018 07:00:23</publishTime>
+      <publishTime>11/25/2018 16:40:42</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>06/06/2018 10:10:10</publishTime>
