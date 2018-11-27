@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>F:\GitHub\Higgz\Eng\Live\smw1125</_PublishTargetUrl>
+    <_PublishTargetUrl>F:\GitHub\Higgz\Eng\Live\smw1127</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="app/scripts/app.js">
@@ -184,16 +184,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/09/2017 19:29:54</publishTime>
     </File>
     <File Include="app/views/aboutus/aboutus.html">
-      <publishTime>11/25/2018 15:42:10</publishTime>
+      <publishTime>11/27/2018 05:26:09</publishTime>
     </File>
     <File Include="app/views/contactus/contactus.html">
       <publishTime>11/24/2018 03:56:03</publishTime>
     </File>
     <File Include="app/views/dashboard.html">
-      <publishTime>11/25/2018 15:49:30</publishTime>
+      <publishTime>11/27/2018 05:27:26</publishTime>
     </File>
     <File Include="app/views/design/view.html">
-      <publishTime>11/25/2018 15:25:48</publishTime>
+      <publishTime>11/27/2018 05:04:28</publishTime>
     </File>
     <File Include="app/views/facility/details.html">
       <publishTime>11/24/2018 03:56:05</publishTime>
@@ -238,7 +238,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/24/2018 03:56:15</publishTime>
     </File>
     <File Include="app/views/team/ourteam.html">
-      <publishTime>11/24/2018 03:56:17</publishTime>
+      <publishTime>11/25/2018 19:26:47</publishTime>
     </File>
     <File Include="app/views/_common/Breadcrumb.html">
       <publishTime>11/24/2018 03:56:24</publishTime>
@@ -262,7 +262,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/24/2018 03:56:21</publishTime>
     </File>
     <File Include="app/views/_common/nav.html">
-      <publishTime>11/24/2018 03:56:20</publishTime>
+      <publishTime>11/27/2018 04:21:33</publishTime>
     </File>
     <File Include="app/views/_common/navigation.html">
       <publishTime>11/24/2018 03:56:19</publishTime>
@@ -277,7 +277,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/06/2018 10:11:36</publishTime>
     </File>
     <File Include="assets/css/custom-style.css">
-      <publishTime>10/17/2018 13:01:16</publishTime>
+      <publishTime>11/26/2018 17:56:37</publishTime>
     </File>
     <File Include="assets/fonts/font-awesome/css/font-awesome.min.css">
       <publishTime>06/06/2018 10:11:36</publishTime>
@@ -359,6 +359,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="assets/fonts/linea/software/linea-icons.css">
       <publishTime>06/06/2018 10:11:36</publishTime>
+    </File>
+    <File Include="assets/images/about/hous.jpg">
+      <publishTime>11/27/2018 05:25:51</publishTime>
     </File>
     <File Include="assets/images/Advertizement/adv-1.jpg">
       <publishTime>08/22/2018 11:46:36</publishTime>
@@ -507,6 +510,15 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="assets/images/home/adv/adv.jpg">
       <publishTime>11/16/2018 13:47:22</publishTime>
     </File>
+    <File Include="assets/images/home/construction.jpg">
+      <publishTime>11/27/2018 05:30:39</publishTime>
+    </File>
+    <File Include="assets/images/home/Constructionzoom.jpg">
+      <publishTime>11/27/2018 05:29:53</publishTime>
+    </File>
+    <File Include="assets/images/home/Constuction 2.jpg">
+      <publishTime>11/26/2018 21:15:46</publishTime>
+    </File>
     <File Include="assets/images/home/design.jpg">
       <publishTime>11/20/2018 10:34:04</publishTime>
     </File>
@@ -540,6 +552,24 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="assets/images/home/design/design9.jpg">
       <publishTime>11/23/2018 04:42:52</publishTime>
     </File>
+    <File Include="assets/images/home/DSC_1175.jpg">
+      <publishTime>11/26/2018 19:24:03</publishTime>
+    </File>
+    <File Include="assets/images/home/DSC_1189.jpg">
+      <publishTime>11/26/2018 19:24:04</publishTime>
+    </File>
+    <File Include="assets/images/home/DSC_1197.jpg">
+      <publishTime>11/26/2018 19:24:05</publishTime>
+    </File>
+    <File Include="assets/images/home/DSC_1203.jpg">
+      <publishTime>11/26/2018 19:24:07</publishTime>
+    </File>
+    <File Include="assets/images/home/DSC_1206.jpg">
+      <publishTime>11/26/2018 19:24:07</publishTime>
+    </File>
+    <File Include="assets/images/home/DSC_1438.jpg">
+      <publishTime>11/26/2018 19:24:07</publishTime>
+    </File>
     <File Include="assets/images/home/hous.jpg">
       <publishTime>11/20/2018 10:39:06</publishTime>
     </File>
@@ -547,10 +577,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/20/2018 10:41:13</publishTime>
     </File>
     <File Include="assets/images/home/house1.jpg">
-      <publishTime>11/20/2018 10:44:15</publishTime>
+      <publishTime>11/26/2018 19:24:07</publishTime>
     </File>
     <File Include="assets/images/home/house2.jpg">
-      <publishTime>11/20/2018 11:06:58</publishTime>
+      <publishTime>11/26/2018 19:24:07</publishTime>
     </File>
     <File Include="assets/images/home/house3.jpg">
       <publishTime>11/20/2018 11:09:57</publishTime>
@@ -560,6 +590,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="assets/images/home/house5.jpg">
       <publishTime>11/20/2018 11:43:58</publishTime>
+    </File>
+    <File Include="assets/images/home/renting.jpg">
+      <publishTime>11/26/2018 20:23:15</publishTime>
     </File>
     <File Include="assets/images/icons/cards/maestro.png">
       <publishTime>06/06/2018 10:11:37</publishTime>
@@ -2599,7 +2632,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/25/2018 16:48:05</publishTime>
     </File>
     <File Include="bin/SMW_Web.dll">
-      <publishTime>11/25/2018 16:48:21</publishTime>
+      <publishTime>11/27/2018 05:33:47</publishTime>
     </File>
     <File Include="bin/System.Spatial.dll">
       <publishTime>06/06/2018 10:10:19</publishTime>
@@ -10927,7 +10960,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/06/2018 10:10:10</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>11/25/2018 16:40:42</publishTime>
+      <publishTime>11/27/2018 05:10:29</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>06/06/2018 10:10:10</publishTime>

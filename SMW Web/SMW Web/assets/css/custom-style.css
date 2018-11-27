@@ -159,3 +159,8 @@ a{
      background: rgba(255, 255, 255, 0.6196078431372549);
      padding:0 15px;
  }
+
+ .swiper-button-next, .swiper-button-prev{
+     border-radius:0px !important;
+     width:1.5rem !important;
+ }
